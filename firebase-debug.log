@@ -1,0 +1,143 @@
+[debug] [2021-02-28T09:42:15.404Z] ----------------------------------------------------------------------
+[debug] [2021-02-28T09:42:15.418Z] Command:       E:\node.js\node.exe C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-02-28T09:42:15.419Z] CLI Version:   9.5.0
+[debug] [2021-02-28T09:42:15.420Z] Platform:      win32
+[debug] [2021-02-28T09:42:15.420Z] Node Version:  v12.16.2
+[debug] [2021-02-28T09:42:15.426Z] Time:          Sun Feb 28 2021 14:42:15 GMT+0500 (Pakistan Standard Time)
+[debug] [2021-02-28T09:42:15.427Z] ----------------------------------------------------------------------
+[debug] [2021-02-28T09:42:15.427Z] 
+[debug] [2021-02-28T09:42:15.462Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-02-28T09:42:15.568Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-28T09:42:15.569Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Web and Moblie Hybrid App Development Course\Assignments\FinalProject
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[debug] [2021-02-28T09:42:16.596Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-02-28T09:42:16.597Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using crsfinalproject. 
+[debug] [2021-02-28T09:42:33.404Z] > refreshing access token with scopes: []
+[debug] [2021-02-28T09:42:33.404Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-28T09:42:33.768Z] <<< HTTP RESPONSE 200 {"date":"Sun, 28 Feb 2021 09:42:34 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-28T09:42:33.805Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/crsfinalproject [none]
+[debug] [2021-02-28T09:42:34.410Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/crsfinalproject 403
+[debug] [2021-02-28T09:42:34.411Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/crsfinalproject {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-02-28T09:42:34.414Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-02-28T09:42:34.754Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async Client.request (C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:289:21)
+    at async Object.doSetup [as project] (C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project crsfinalproject. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-02-28T09:43:16.914Z] ----------------------------------------------------------------------
+[debug] [2021-02-28T09:43:16.916Z] Command:       E:\node.js\node.exe C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-02-28T09:43:16.916Z] CLI Version:   9.5.0
+[debug] [2021-02-28T09:43:16.916Z] Platform:      win32
+[debug] [2021-02-28T09:43:16.917Z] Node Version:  v12.16.2
+[debug] [2021-02-28T09:43:16.919Z] Time:          Sun Feb 28 2021 14:43:16 GMT+0500 (Pakistan Standard Time)
+[debug] [2021-02-28T09:43:16.919Z] ----------------------------------------------------------------------
+[debug] [2021-02-28T09:43:16.919Z] 
+[debug] [2021-02-28T09:43:16.932Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-28T09:43:16.933Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Web and Moblie Hybrid App Development Course\Assignments\FinalProject
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using crsfinalproject. 
+[debug] [2021-02-28T09:44:44.053Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/crsfinalproject [none]
+[debug] [2021-02-28T09:44:44.623Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/crsfinalproject 403
+[debug] [2021-02-28T09:44:44.623Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/crsfinalproject {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-02-28T09:44:44.624Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-02-28T09:44:45.026Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async Client.request (C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:289:21)
+    at async Object.doSetup [as project] (C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project crsfinalproject. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-02-28T09:45:09.201Z] ----------------------------------------------------------------------
+[debug] [2021-02-28T09:45:09.204Z] Command:       E:\node.js\node.exe C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-02-28T09:45:09.204Z] CLI Version:   9.5.0
+[debug] [2021-02-28T09:45:09.204Z] Platform:      win32
+[debug] [2021-02-28T09:45:09.204Z] Node Version:  v12.16.2
+[debug] [2021-02-28T09:45:09.206Z] Time:          Sun Feb 28 2021 14:45:09 GMT+0500 (Pakistan Standard Time)
+[debug] [2021-02-28T09:45:09.207Z] ----------------------------------------------------------------------
+[debug] [2021-02-28T09:45:09.207Z] 
+[debug] [2021-02-28T09:45:09.218Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-28T09:45:09.219Z] > authorizing via signed-in user
+[debug] [2021-02-28T09:45:09.219Z] [iam] checking project crsfinalproject for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-02-28T09:45:09.222Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-28T09:45:09.222Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-28T09:45:09.597Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sun, 28 Feb 2021 09:45:10 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-28T09:45:09.677Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/crsfinalproject:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-02-28T09:45:11.179Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 28 Feb 2021 09:45:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1278","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-28T09:45:11.181Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project crsfinalproject:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2021-02-28T09:45:11.186Z] > refreshing access token with scopes: []
+[debug] [2021-02-28T09:45:11.186Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-28T09:45:11.526Z] <<< HTTP RESPONSE 200 {"date":"Sun, 28 Feb 2021 09:45:12 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-28T09:45:11.618Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/crsfinalproject [none]
+[debug] [2021-02-28T09:45:12.128Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/crsfinalproject 403
+[debug] [2021-02-28T09:45:12.128Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/crsfinalproject {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-02-28T09:45:12.129Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-02-28T09:45:12.468Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async Client.request (C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:289:21)
+    at async Object.getDefaultHostingSite (C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:66:9)
+    at async C:\Users\Hp 9480\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:161:17
+[error] 
+[error] Error: Failed to get Firebase project crsfinalproject. Please make sure the project exists and your account has permission to access it.
